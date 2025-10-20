@@ -25,8 +25,8 @@ public class AddonPackItems
     private void registerItems() {
         for (AddonRollingStockItems item : AddonRollingStockItems.values()) {
             if (item.item != null) {
-                item.item.setUnlocalizedName(Info.modID + ":" + item.name());
-                GameRegistry.registerItem(item.item, item.name());
+                item.item.setUnlocalizedName(Info.modID + ":" + item.ItemName);
+                GameRegistry.registerItem(item.item, item.ItemName);
             }
         }
     }

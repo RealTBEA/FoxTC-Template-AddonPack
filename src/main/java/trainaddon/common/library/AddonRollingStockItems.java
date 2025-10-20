@@ -26,6 +26,15 @@ public enum AddonRollingStockItems
         this.iconName = iconName;
         TypeOfRollingStock = typeOfRollingStock;
         this.amountForEmerald = (byte) amountForEmerald;
+        ItemName = this.name();
+    }
+
+    AddonRollingStockItems(String itemName, String iconName, train.common.library.TypeOfRollingStock typeOfRollingStock, int amountForEmerald)
+    {
+        this.iconName = iconName;
+        TypeOfRollingStock = typeOfRollingStock;
+        this.amountForEmerald = (byte) amountForEmerald;
+        ItemName = itemName;
     }
 
     /** USED FOR ROLLINGSTOCK THAT IS NOT ALLOWED TO BE TRADED FOR
@@ -38,11 +47,22 @@ public enum AddonRollingStockItems
         this.iconName = iconName;
         TypeOfRollingStock = typeOfRollingStock;
         this.amountForEmerald = -1;
+        ItemName = this.name();
+    }
+
+    AddonRollingStockItems(String itemName, String iconName, TypeOfRollingStock typeOfRollingStock)
+    {
+        this.iconName = iconName;
+        TypeOfRollingStock = typeOfRollingStock;
+        this.amountForEmerald = -1;
+        ItemName = itemName;
     }
 
     public Item item;
     public final String iconName;
     public final TypeOfRollingStock TypeOfRollingStock;
+
+    public final String ItemName;
 
     /**
      * amount for emerald. For ItemRollingStock, it is the price for one train
