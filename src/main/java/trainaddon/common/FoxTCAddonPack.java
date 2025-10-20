@@ -16,6 +16,7 @@ import trainaddon.common.core.handler.AddonPackRollingStockModelHandler;
 import trainaddon.common.creativetabs.CreativeTabAddonPack;
 import trainaddon.common.library.AddonPackItems;
 import trainaddon.common.library.Info;
+import trainaddon.common.recipes.AddonTableRecipeRegister;
 
 
 @Mod(modid = Info.modID, name = Info.modName, version = Info.modVersion, dependencies = "required-after:tc")
@@ -48,6 +49,9 @@ public class FoxTCAddonPack
     public void load(FMLInitializationEvent event)
     {
         addonLog.info("load Addon Pack -" + Info.modName);
+
+        addonLog.info("Initializing recipes...");
+        new AddonTableRecipeRegister();
 
     }
 
