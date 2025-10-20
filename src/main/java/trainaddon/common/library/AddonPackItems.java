@@ -1,7 +1,7 @@
 package trainaddon.common.library;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import train.common.items.ItemRollingStock;
+import trainaddon.common.items.ItemAddonPackRollingStock;
 
 public class AddonPackItems
 {
@@ -18,7 +18,7 @@ public class AddonPackItems
     {
         for (AddonRollingStockItems item : AddonRollingStockItems.values())
         {
-            item.item = new ItemRollingStock(item.iconName, item.TypeOfRollingStock);
+            item.item = new ItemAddonPackRollingStock(item.iconName, item.TypeOfRollingStock);
         }
     }
 
