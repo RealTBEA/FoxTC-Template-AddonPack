@@ -1,6 +1,6 @@
 [
   {
-    "modid": "ABBREVIATION_FOR_ADDON",
+    "modid": "lowercase_abbreviation_for_addon",
     "name": "FoxTC-Addon-Template",
     "description": "A addon pack for FoxTC",
     "version": "1.0.0",
